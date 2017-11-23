@@ -16,6 +16,13 @@
       "pre-push": "yarn run test"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1"
+  },
   "devDependencies": {
     "chance": "^1.0.12",
     "code": "^5.1.2",
@@ -42,10 +49,6 @@
     "pkg:preview": "katulong rodoabad preview",
     "pkg:test/unit": "katulong rodoabad test",
     "test": "yarn check --integrity && yarn run pkg:lint && yarn run pkg:coverage",
-    "semantic-release": "semantic-release pre && yarn publish --access public && semantic-release post"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.1.1"
+    "semantic-release": "semantic-release pre && yarn publish && semantic-release post"
   }
 }
