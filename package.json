@@ -1,6 +1,6 @@
 {
   "name": "@at-scale/mock-react-components",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "A collection of mock React components",
   "main": "index.js",
   "repository": "git@github.com:at-scale/mock-react-components.git",
@@ -30,6 +30,7 @@
     "react-addons-perf": "^15.4.2",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.1.1",
+    "semantic-release": "^8.2.0",
     "sinon": "^4.1.2",
     "stylelint-config-semantic": "^3.0.0",
     "validate-commit-msg": "^2.14.0"
@@ -40,7 +41,8 @@
     "pkg:lint": "katulong rodoabad lint",
     "pkg:preview": "katulong rodoabad preview",
     "pkg:test/unit": "katulong rodoabad test",
-    "test": "yarn check --integrity && yarn run pkg:lint && yarn run pkg:coverage"
+    "test": "yarn check --integrity && yarn run pkg:lint && yarn run pkg:coverage",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
