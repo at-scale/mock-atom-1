@@ -42,7 +42,7 @@
     "pkg:preview": "katulong rodoabad preview",
     "pkg:test/unit": "katulong rodoabad test",
     "test": "yarn check --integrity && yarn run pkg:lint && yarn run pkg:coverage",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish --access public && semantic-release post"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
