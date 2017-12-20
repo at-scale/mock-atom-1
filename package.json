@@ -24,6 +24,7 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "eslint-config-rodoabad": "^1.13.1",
+    "husky": "^0.14.3",
     "jest": "^22.0.3",
     "katulong": "4.1.4",
     "katulong-preset-rodoabad": "2.2.0",
