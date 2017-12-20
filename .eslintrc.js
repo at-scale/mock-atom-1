@@ -1,4 +1,7 @@
 module.exports = {
+    env: {
+        jest: true
+    },
     extends: 'rodoabad',
     rules: {
         'arrow-body-style': [
