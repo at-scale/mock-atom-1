@@ -4,7 +4,7 @@ import React from 'react';
 import {mockReactFooterComponent as identifyingClassName} from '../../styles/mock-react-footer-component.scss';
 import {shallow} from 'enzyme';
 
-describe('Given the <MockReactFooterComponent/>', () => {
+describe('Given the <MockReactFooterComponent/> component', () => {
     const chance = new Chance();
     const requiredProps = () => {
         return {

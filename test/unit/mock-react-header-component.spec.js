@@ -4,7 +4,7 @@ import React from 'react';
 import {mockReactHeaderComponent as identifyingClassName} from '../../styles/mock-react-header-component.scss';
 import {shallow} from 'enzyme';
 
-describe('Given the <MockReactHeaderComponent/>', () => {
+describe('Given the <MockReactHeaderComponent/> component', () => {
     const chance = new Chance();
     const requiredProps = () => {
         return {
