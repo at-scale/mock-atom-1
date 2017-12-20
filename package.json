@@ -9,13 +9,6 @@
   "engines": {
     "node": ">=8.9"
   },
-  "config": {
-    "ghooks": {
-      "pre-commit": "yarn run pkg:test/unit",
-      "commit-msg": "validate-commit-msg",
-      "pre-push": "yarn run test"
-    }
-  },
   "publishConfig": {
     "access": "public"
   },
