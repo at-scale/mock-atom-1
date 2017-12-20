@@ -24,31 +24,31 @@
     "react": "^16.1.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "5.2.5",
+    "@commitlint/config-conventional": "5.2.3",
     "chance": "^1.0.12",
     "code": "^5.1.2",
     "css-modules-require-hook": "^4.2.2",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "eslint-config-rodoabad": "^1.13.1",
-    "ghooks": "^2.0.0",
+    "jest": "^22.0.3",
     "katulong": "4.1.4",
-    "katulong-preset-rodoabad": "1.9.0",
-    "mocha-clean": "^1.0.0",
+    "katulong-preset-rodoabad": "2.2.0",
     "react-addons-perf": "^15.4.2",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.1.1",
     "semantic-release": "^8.2.0",
-    "sinon": "^4.1.2",
-    "stylelint-config-semantic": "^3.0.0",
-    "validate-commit-msg": "^2.14.0"
+    "stylelint-config-semantic": "^3.0.0"
   },
   "scripts": {
-    "pkg:build": "katulong rodoabad build",
-    "pkg:coverage": "katulong rodoabad coverage",
-    "pkg:lint": "katulong rodoabad lint",
-    "pkg:preview": "katulong rodoabad preview",
-    "pkg:test/unit": "katulong rodoabad test",
-    "test": "yarn check --integrity && yarn run pkg:lint && yarn run pkg:coverage",
-    "semantic-release": "semantic-release pre && yarn publish && semantic-release post"
+    "build": "katulong rodoabad build",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "lint": "katulong rodoabad lint",
+    "precommit": "jest --coverage false",
+    "prepush": "yarn run test",
+    "preview": "katulong rodoabad preview",
+    "test": "yarn check --integrity && yarn run lint && jest",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   }
 }
