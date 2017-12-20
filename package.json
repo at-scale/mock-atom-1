@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.1.1"
+    "react": "^16.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^5.2.5",
@@ -27,13 +27,16 @@
     "husky": "^0.14.3",
     "jest": "^22.0.3",
     "katulong": "4.1.4",
-    "katulong-preset-rodoabad": "2.2.0",
+    "katulong-preset-rodoabad": "^2.2.0",
     "react-addons-perf": "^15.4.2",
     "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.1.1",
+    "react-dom": "^16.2.0",
     "semantic-release": "^8.2.0",
     "stylelint-config-semantic": "^3.0.0"
   },
+  "bundledDependencies": [
+    "katulong-preset-rodoabad"
+  ],
   "scripts": {
     "build": "katulong rodoabad build",
     "commitmsg": "commitlint -e $GIT_PARAMS",
