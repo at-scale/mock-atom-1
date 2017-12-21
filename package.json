@@ -13,7 +13,6 @@
     "access": "public"
   },
   "dependencies": {
-    "code": "^5.1.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0"
   },
@@ -21,6 +20,7 @@
     "@commitlint/cli": "^5.2.5",
     "@commitlint/config-conventional": "^5.2.3",
     "chance": "^1.0.12",
+    "code": "^5.1.2",
     "css-modules-require-hook": "^4.2.2",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
@@ -35,9 +35,6 @@
     "semantic-release": "^8.2.0",
     "stylelint-config-semantic": "^3.0.0"
   },
-  "bundledDependencies": [
-    "katulong-preset-rodoabad"
-  ],
   "scripts": {
     "build": "katulong rodoabad build",
     "commitmsg": "commitlint -e $GIT_PARAMS",
