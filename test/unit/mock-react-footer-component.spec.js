@@ -1,6 +1,7 @@
 import Chance from 'chance';
 import MockReactFooterComponent from '../../src/mock-react-footer-component';
 import React from 'react';
+import {expect} from 'code';
 import {mockReactFooterComponent as identifyingClassName} from '../../styles/mock-react-footer-component.scss';
 import {shallow} from 'enzyme';
 
@@ -19,19 +20,19 @@ describe('Given the <MockReactFooterComponent/> component', () => {
     it('should be a footer', () => {
         const component = render();
 
-        expect(component.type()).toEqual('footer');
+        expect(component.type()).equal('footer');
     });
 
     it('should have an identifying class name', () => {
         const component = render();
 
-        expect(component.props().className).toEqual(identifyingClassName);
+        expect(component.props().className).equal(identifyingClassName);
     });
 
     it('should have a footer text', () => {
         const props = requiredProps();
         const component = render(props);
 
-        expect(component.text()).toEqual(props.text);
+        expect(component.text()).equal(props.text);
     });
 });
