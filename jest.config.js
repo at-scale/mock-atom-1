@@ -20,5 +20,8 @@ module.exports = {
     moduleNameMapper: {
         '^.+\\.(scss)$': '<rootDir>/test/utils/css-hooks.js'
     },
-    setupTestFrameworkScriptFile: '<rootDir>/test/utils/enzyme-config.js'
+    setupTestFrameworkScriptFile: '<rootDir>/test/utils/enzyme-config.js',
+    transformIgnorePatterns: [
+        'node_modules/(?!(@at-scale)/)'
+    ]
 };
