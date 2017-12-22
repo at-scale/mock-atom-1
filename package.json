@@ -35,9 +35,6 @@
     "semantic-release": "^8.2.0",
     "stylelint-config-semantic": "^3.0.0"
   },
-  "bundledDependencies": [
-    "katulong-preset-rodoabad"
-  ],
   "scripts": {
     "build": "katulong rodoabad build",
     "commitmsg": "commitlint -e $GIT_PARAMS",
