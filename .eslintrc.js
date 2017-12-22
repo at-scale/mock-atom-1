@@ -12,6 +12,7 @@ module.exports = {
             2,
             'never'
         ],
-        'object-curly-newline': 0
+        'object-curly-newline': 0,
+        'react/jsx-no-bind': 0
     }
 };
