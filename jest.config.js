@@ -18,7 +18,7 @@ module.exports = {
         }
     },
     moduleNameMapper: {
-        '^.+\\.(scss)$': '<rootDir>/test/utils/css-hooks.js'
+        '^.+\\.(scss)$': 'identity-obj-proxy'
     },
     setupTestFrameworkScriptFile: '<rootDir>/test/utils/enzyme-config.js',
     transformIgnorePatterns: [
